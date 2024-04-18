@@ -1,0 +1,26 @@
+Création du plateau :
+grille 3x3
+case vide
+cheminement :
+création d'une fonction afin d'afficher le plateau de jeu à l'écran
+boucle afin de pouvoir parcourir chaque case du plateau et afficher son contenu
+
+Création des joueurs :
+2 joueurs
+définir les règles afin que chaque joueurs puissent poser leur symbole
+
+Description du fonctionnement du jeu :
+pouvoir demander au joueur où il souhaite poser son symbole
+vérification si le symbole est à une case vide ou non et dans les limites du plateau de jeu
+mis à jour du plateau de jeu dès qu'un joueur à jouer
+fonction permettant de passer d'un joueur à l'autre
+vérification si victoire potentiel d'un des joueurs à chaque coup
+
+Conditions de fin de partie:
+3 symboles identiques affichés soit en ligne, soit en colonne soit en diagonale
+
+Boucle principale du jeu :
+Défini l'alternance entre les joueurs jusqu'à ce qu'il y ai victoire ou match nul
+
+vérification du jeu :
+faire plusieurs test afin d'avoir plusieurs scénarios possible et déboguer si besoin ai.
