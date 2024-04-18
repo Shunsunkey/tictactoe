@@ -13,16 +13,17 @@ class Game
         @turn_count = 0
     end
 
-    def switch_player
+    def switch_player #permet le changer le joueur qui joue en passant de player1 à player2
         @current_player = @current_player == @players[0] ? @players[1] : @players[0]
     end
 
     def check_winner
         b = @board.cases
+        #vérifie pour chaque ligne horizontale du tableau  si la condition de victoire est respectée
         return true if b["A1"].value == b["A2"].value && b["A1"].value == b["A3"].value && b["A1"].value != " "
         return true if b["B1"].value == b["B2"].value && b["B1"].value == b["B3"].value && b["B1"].value != " "
         return true if b["C1"].value == b["C2"].value && b["C1"].value == b["C3"].value && b["C1"].value != " "
-        (0..2).each do |i| #vérifie pour chaque ligne horizontale ou verticale du tableau si la condition de victoire est respectée
+        (0..2).each do |i| #vérifie pour chaque colonne verticale du tableau si la condition de victoire est respectée
             return true if b["A#{i+1}"].value == b["B#{i+1}"].value && b["B#{i+1}"].value == b["C#{i+1}"].value && b["A#{i+1}"].value != " "
         end
         #vérifie pour chaque diagonale si la condition de victoire est respectée
